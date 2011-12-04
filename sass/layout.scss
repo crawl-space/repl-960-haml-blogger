@@ -1,0 +1,38 @@
+@import "compass/utilities/general/clearfix";
+@import "960/grid";
+
+$ninesixty_columns: 16;
+
+#wrapper
+{
+  @include grid_container;
+  @include clearfix;
+}
+
+#header
+{
+  @include grid(16);
+  @include clearfix;
+
+  background: #ddd;
+}
+
+#footer
+{
+  @include grid(16);
+  @include clearfix;
+
+  background: #ddd;
+}
+
+#content
+{
+  @include grid(16);
+  @include clearfix;
+
+  #post
+  {
+    @include grid(10);
+    @include clearfix;
+  }
+}

@@ -1,0 +1,23 @@
+%html
+  %head
+    %link(rel="stylesheet" type="text/css" href="stylesheets/layout.css")
+    %link(rel="stylesheet" type="text/css" href="stylesheets/grid.css")
+    %link(rel="stylesheet" type="text/css" href="stylesheets/text.css")
+
+    %title
+      != "<data:blog.pageTitle/>"
+
+    != "<b:skin />"
+    != "<b:include data='blog' name='all-head-content'/>"
+    %meta{:name => "description", "expr:content" => "data:blog.metaDescription"}
+
+  %body
+    #wrapper
+      #header
+        HI
+      #content
+        != "<b:section class='main' id='main' showaddelement='no'>"
+        != "<b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>"
+        != "</b:section>"
+      #footer
+
