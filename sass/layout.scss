@@ -14,7 +14,7 @@ $ninesixty_columns: 16;
   @include grid(16);
   @include clearfix;
 
-  background: #ddd;
+  background: #fff;
 }
 
 #footer
@@ -22,17 +22,48 @@ $ninesixty_columns: 16;
   @include grid(16);
   @include clearfix;
 
-  background: #ddd;
+  background: #ccc;
 }
 
-#content
-{
-  @include grid(16);
-  @include clearfix;
-
-  #post
+  #content
   {
     @include grid(10);
     @include clearfix;
+
+    float: left;
+    background: #fff;
   }
+
+  #sidebar
+  {
+    @include grid(6);
+    @include clearfix;
+
+    float: right;
+    background: #fff;
+  }
+
+h2.date-header {
+    color: #ccc;
+}
+
+h3.entry-title {
+    color: #133CAC;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #476dd5;
+    
+}
+
+a:visited {
+    color: #6d89d5;
+}
+
+.post-labels a:link {
+    color: #FFAD00;
 }

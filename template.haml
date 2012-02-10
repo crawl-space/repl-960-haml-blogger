@@ -7,17 +7,31 @@
     %title
       != "<data:blog.pageTitle/>"
 
-    != "<b:skin />"
-    != "<b:include data='blog' name='all-head-content'/>"
+    %b:skin
+      :cdata
+        /*
+        -----------------------------------------------
+        Blogger Template Style
+        Name:     Haml 960 Prototemplate
+        Designer: James Bowes
+        URL:      http://blog.repl.ca
+        ----------------------------------------------- */
+        %%CSS_HERE%%
+
+      
+    %b:include(data='blog' name='all-head-content')
     %meta{:name => "description", "expr:content" => "data:blog.metaDescription"}
 
   %body
     #wrapper
-      #header
-        HI
-      #content
-        != "<b:section class='main' id='main' showaddelement='no'>"
-        != "<b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>"
-        != "</b:section>"
+      %header
+        #header
+          %b:section.header#header(maxwidgets='1' showaddelement='yes')
+      #meat
+        #content
+          %b:section.main#main(showaddelement='yes')
+            %b:widget#Blog1(locked='true' title='Blog Posts' type='Blog')
+        #sidebar
+          %b:section.sidebar#sidebar1(showaddelement='yes')
       #footer
-
+        %b:section.footer#footer(maxwidgets='1' showaddelement='yes')
