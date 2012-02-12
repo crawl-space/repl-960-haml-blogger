@@ -32,6 +32,8 @@ $ninesixty_columns: 16;
 
     float: left;
     background: #fff;
+    border-style-right: solid;
+    border-width-right: 1px;
   }
 
   #sidebar
@@ -45,10 +47,14 @@ $ninesixty_columns: 16;
 
 h2.date-header {
     color: #ccc;
+    font-size: 12pt;
 }
 
 h3.entry-title {
     color: #133CAC;
+    font-size: 16pt;
+    font-weight: bold;
+    margin-bottom: 0.3em;
 }
 
 a {
@@ -66,4 +72,35 @@ a:visited {
 
 .post-labels a:link {
     color: #FFAD00;
+}
+
+.post-header {
+    padding-bottom: 1.2em;
+    font-size: 8pt;
+}
+
+.post-footer-line {
+    padding-top: 1em;
+    font-size: 8pt;
+}
+
+.post-outer {
+    padding-bottom: 2em;
+}
+
+.inline-ad {
+    padding-bottom: 2em;
+}
+
+.sidebar > * {
+    display: block;
+    margin-top: 2em;
+}
+
+.sidebar > *:first-child {
+    margin-top: 0em;
+}
+
+.widget > h2 {
+    margin-bottom: 0.5em;
 }
