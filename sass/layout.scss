@@ -103,4 +103,30 @@ a:visited {
 
 .widget > h2 {
     margin-bottom: 0.5em;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.titlewrapper > h1 {
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 0.1em;
+}
+
+.descriptionwrapper {
+    font-size: 12pt;
+}
+
+/* widget customizations */
+.blog-list-container li {
+    margin-left: 0pt;
+}
+.popular-posts ul {
+    list-style-type: none;
+}
+
+.popular-posts li {
+    margin-left: 5pt;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
