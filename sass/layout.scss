@@ -118,6 +118,11 @@ a:visited {
 }
 
 /* widget customizations */
+.Attribution {
+    padding-top: 3em;
+    font-size: 8pt;
+}
+
 .blog-list-container li {
     margin-left: 0pt;
 }
@@ -131,6 +136,7 @@ a:visited {
     padding-bottom: 0px;
 }
 
+/* custom about-me widget styling */
 .about-me-image img {
     border-radius: 8px;
 }
