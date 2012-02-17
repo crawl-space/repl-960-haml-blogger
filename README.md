@@ -3,11 +3,12 @@ A Blogger Prototype Template in HAML and SASS
 
 This is the template I use for http://blog.repl.ca
 It uses:
- * compass
- * 960.gs
- * SASS
- * HAML
- * Viewers Like You
+
+* compass
+* 960.gs
+* SASS
+* HAML
+* Viewers Like You
 
 template.haml is a pretty bare haml formatted blogger template; just enough to
 have a single sidebar and blog content. sass/layout.scss is where you'd put
